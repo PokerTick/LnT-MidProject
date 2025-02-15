@@ -137,9 +137,9 @@ public class Menu {
 		System.out.println("+-------+------------+----------------+------------+-------------+------------+");
 		System.out.println("| No	| ID         | Name           | Gender     | Position    | Salary     |");
 		System.out.println("+-------+------------+----------------+------------+-------------+------------+");
-
+		int i = 1;
 		for (Employee e : employees) {
-			int i = 1;
+			
 		    System.out.printf("| %-2s	| %-10s | %-14s | %-10s | %-11s | Rp %7.0f |\n",
 		    i,e.getId(), e.getName(), e.getGender(), e.getPosition1(), e.getSalary());
 		    i++;
@@ -192,7 +192,7 @@ public class Menu {
         
         for (String position : positionCount.keySet()) {
             int count = positionCount.get(position);
-            if (count % 3 == 0) {
+            if (count % 4 == 0) {
                 applyBonus(position);
             }
         }
